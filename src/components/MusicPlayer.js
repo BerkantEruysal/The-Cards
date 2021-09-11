@@ -40,7 +40,7 @@ const MusicPlayer = (props) => {
     });
   
     return (
-      <div className="">
+      <div className="music-player">
         <button onClick={() => (isMuted ? setIsMuted(false) : setIsMuted(true))}>
           {isMuted ? "Unmute Music" : "Mute Music"}
         </button>
