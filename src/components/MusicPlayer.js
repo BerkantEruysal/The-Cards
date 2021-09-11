@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import { useEffect, useState } from "react/cjs/react.development";
 import Music from "../sounds/music.mp3";
 
@@ -23,22 +23,35 @@ const useAudio = (url) => {
   return [playing, play, stop];
 };
 
-const MusicPlayer = ({ isPlaying, setIsPlaying }) => {
-  const [playing, play, stop] = useAudio(Music);
-  const [isMuted, setIsMuted] = useState(false);
-  useEffect(() => {
-    if (isPlaying == true && isMuted == false) {
-      play();
-    } else stop();
-  });
 
-  return (
-    <div className="music-player">
-      <button onClick={() => (isMuted ? setIsMuted(false) : setIsMuted(true))}>
-        {isMuted ? "Unmute Music" : "Mute Music"}
-      </button>
-    </div>
-  );
-};
+ 
 
-export default MusicPlayer;
+
+
+
+const MusicPlayer = (props) => {
+    const [playing, play, stop] = useAudio(Music);
+    const [isMuted, setIsMuted] = useState(false);
+    useEffect(() => {
+      if (props.isPlaying == true && isMuted == false) {
+        play();
+      } else stop();
+    });
+  
+    return (
+      <div className="music-player">
+        <button onClick={() => (isMuted ? setIsMuted(false) : setIsMuted(true))}>
+          {isMuted ? "Unmute Music" : "Mute Music"}
+        </button>
+      </div>
+    );
+  };
+
+export default MusicPlayer
+
+
+
+
+
+
+
