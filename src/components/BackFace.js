@@ -1,4 +1,4 @@
-import BackFaceImg from "../images/back-face.png"
+import BackFaceImg from "../images/back-face.png";
 const BackFace = (props) => {
   return (
     <div className="back-face">

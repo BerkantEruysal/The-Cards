@@ -1,10 +1,10 @@
 const FrontFace = (props) => {
-    return (
-      <div className="front-face">
+  return (
+    <div className="front-face">
       <img src={props.image} alt="" />
-        <p>{props.text}</p>
-      </div>
-    );
-  };
+      <p>{props.text}</p>
+    </div>
+  );
+};
 
-export default FrontFace
+export default FrontFace;
