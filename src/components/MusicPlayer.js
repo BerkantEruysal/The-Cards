@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import Music from "../sounds/music.mp3";
 
 const useAudio = (url) => {
