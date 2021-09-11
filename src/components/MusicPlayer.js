@@ -23,7 +23,7 @@ const useAudio = (url) => {
   return [playing, play, stop];
 };
 
-const Player = ({ isPlaying, setIsPlaying }) => {
+const MusicPlayer = ({ isPlaying, setIsPlaying }) => {
   const [playing, play, stop] = useAudio(Music);
   const [isMuted, setIsMuted] = useState(false);
   useEffect(() => {
@@ -41,4 +41,4 @@ const Player = ({ isPlaying, setIsPlaying }) => {
   );
 };
 
-export default Player;
+export default MusicPlayer;
