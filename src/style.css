@@ -114,6 +114,7 @@ body {
 .music-player button {
   position: absolute;
   width: 90px;
+  opacity: 0.8;
 }
 .how-to-play {
   padding-top: 30px;
