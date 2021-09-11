@@ -78,14 +78,14 @@ const CardList = (props) => {
       isMatched: false,
       sound: ChildSound,
       icon: ChildImage,
-      tr: { text: "Çocuk", id: 6, isOpened: false },
+      tr: { text: "Cocuk", id: 6, isOpened: false },
       en: { text: "Child", id: 7, isOpened: false },
     },
     {
       isMatched: false,
       sound: WorldSound,
       icon: WorldImage,
-      tr: { text: "Dünya", id: 8, isOpened: false },
+      tr: { text: "Dunya", id: 8, isOpened: false },
       en: { text: "World", id: 9, isOpened: false },
     },
     {
@@ -99,7 +99,7 @@ const CardList = (props) => {
       isMatched: false,
       sound: StudentSound,
       icon: StudentImage,
-      tr: { text: "Öğrenci", id: 12, isOpened: false },
+      tr: { text: "Ogrenci", id: 12, isOpened: false },
       en: { text: "Student", id: 13, isOpened: false },
     },
     {
